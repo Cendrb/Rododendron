@@ -1,6 +1,8 @@
 package com.cendrb.rododendron.utility;
 
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.monster.EntityZombie;
+import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.MathHelper;
 
 import java.util.Random;
@@ -25,4 +27,8 @@ public class GenericHelpers {
 		projectile.motionZ = d2 * f1 * random.nextGaussian();
 	}
 
+	public static ChunkCoordinates getblockBellowEntity(Entity entity)
+    {
+        
+    }
 }
