@@ -13,5 +13,6 @@
   "surprise": {"category": "master", "sounds": [{"name": "surprise", "stream": false}]},
   "akbarRiot": {"category": "master", "sounds": [{"name": "akbarRiot", "stream": true}]},
   "akbarSong": {"category": "master", "sounds": [{"name": "akbarSong", "stream": true}]},
-  "akbarArmed": {"category": "master", "sounds": [{"name": "akbarArmed", "stream": true}]}
+  "akbarArmed": {"category": "master", "sounds": [{"name": "akbarArmed", "stream": true}]},
+  "adhan": {"category": "master", "sounds": [{"name": "adhan", "stream": true}]}
   }
