@@ -55,5 +55,6 @@ public class Recipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.buildersStaff), " CC", " PC", "B  ", 'C', ModItems.energizedCrystal, 'P', Blocks.brick_block, 'B', ModBlocks.energizedIngot);
 
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.antinigga, 8), "SSS", "SIS", "SSS", 'S', Blocks.stone, 'I', Items.iron_ingot);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.adhanPipe), " GA", "GSG", "SG ", 'S', Items.stick, 'A', ModBlocks.akbar, 'G', Items.gold_nugget);
     }
 }
