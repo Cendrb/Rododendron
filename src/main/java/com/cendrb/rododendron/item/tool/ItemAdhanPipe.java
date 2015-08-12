@@ -14,32 +14,37 @@ import net.minecraft.world.World;
 /**
  * Created by Honza on 12. 8. 2015.
  */
-public class ItemAdhanPipe extends ItemChargeableTool {
+public class ItemAdhanPipe extends ItemGeneric {
 
     public ItemAdhanPipe()
     {
         super();
         setUnlocalizedName(Names.Items.adhanPipe);
+        setNoRepair();
+        setMaxDamage(400);
+        setMaxStackSize(1);
     }
 
     @Override
-    public int getItemDamagePerUse(ItemStack itemStack) {
-        return 100;
+    public ItemStack onItemRightClick(ItemStack item, World world, EntityPlayer player) {
+
+        if (!world.isRemote && item.getItemDamage() == 0)
+        {
+            item.damageItem(399, player);
+            world.playSoundEffect(player.posX, player.posY, player.posZ, "rododendron:adhan", 64, 1);
+        }
+        return item;
     }
 
     @Override
-    public int getMaxItemDamage() {
-        return 1000;
+    public void onUpdate(ItemStack item, World world, Entity entity, int p_77663_4_, boolean p_77663_5_) {
+
+        if (!world.isRemote && item.getItemDamage() > 0)
+        {
+            item.setItemDamage(item.getItemDamage() - 1);
+        }
+
+
+        super.onUpdate(item, world, entity, p_77663_4_, p_77663_5_);
     }
-
-
-
-    @Override
-    protected boolean useTheFuckingItem(ItemStack itemStack, EntityPlayer player, World world) {
-        world.playSoundEffect(player.posX, player.posY, player.posZ, "rododendron:adhan", 64, 1);
-        return true;
-    }
-
-
-
 }
