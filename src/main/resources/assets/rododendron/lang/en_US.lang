@@ -24,6 +24,7 @@ item.rododendron:energizedCrystal.name=Energized Crystal
 item.rododendron:vibrator.name=Vibrator
 item.rododendron:uselessWater.name=Useless water
 item.rododendron:rightHand.name=Right Hand
+item.rododendron:adhanPipe.name=Adhan Pipe
 
 # Blocks
 tile.rododendron:gayHead.name=Gay Head
@@ -60,7 +61,7 @@ entity.rododendron.AkbarCow.name=Akbar Cow
 entity.rododendron.MegaAkbarCow.name=Mega Akbar Cow
 entity.rododendron.Dildo.name=Dildo
 entity.rododendron.Dun.name=Dun
-entity.rododendron.Yvonne.name=Ivona Soucková
+entity.rododendron.Yvonne.name=Ivona Souckovï¿½
 entity.rododendron.Mary.name=Maria Halbrstatova
 entity.rododendron.Sakalka.name=Libuse Sakakurva
 entity.rododendron.Stepanek.name=Stepanek

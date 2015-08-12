@@ -29,6 +29,7 @@ public final class Names {
         public static final String rightHand = "rightHand";
         public static final String uselessWater = "uselessWater";
         public static final String vibrator = "vibrator";
+        public static final String adhanPipe = "adhanPipe";
     }
 
     public static class Blocks

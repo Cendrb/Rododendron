@@ -9,6 +9,7 @@ import com.cendrb.rododendron.item.food.ItemOverchargedCookie;
 import com.cendrb.rododendron.item.food.ItemPinkCookie;
 import com.cendrb.rododendron.item.motion_core.ItemEnergizedMotionCore;
 import com.cendrb.rododendron.item.motion_core.ItemPinkMotionCore;
+import com.cendrb.rododendron.item.tool.ItemAdhanPipe;
 import com.cendrb.rododendron.reference.Names;
 import com.cendrb.rododendron.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -41,6 +42,8 @@ public class ModItems {
     public static final ItemVibrator vibrator = new ItemVibrator();
     public static final ItemRightHand rightHand = new ItemRightHand();
     public static final ItemUselessWater uselessWater = new ItemUselessWater();
+    public static final ItemAdhanPipe adhanPipe = new ItemAdhanPipe();
+
 
 
     public static void init()
@@ -70,5 +73,6 @@ public class ModItems {
         GameRegistry.registerItem(vibrator, Names.Items.vibrator);
         GameRegistry.registerItem(rightHand, Names.Items.rightHand);
         GameRegistry.registerItem(uselessWater, Names.Items.uselessWater);
+        GameRegistry.registerItem(adhanPipe, Names.Items.adhanPipe);
     }
 }
