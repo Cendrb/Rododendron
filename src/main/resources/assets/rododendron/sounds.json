@@ -1,0 +1,17 @@
+{
+  "dildo/say": {"category": "hostile","sounds": [{"name": "dildo/say","stream": false}]},
+  "dildo/hurt": {"category": "hostile","sounds": [{"name": "dildo/hurt","stream": false}]},
+  "dildo/death": {"category": "hostile","sounds": [{"name": "dildo/death","stream": false}]},
+  "dun/death": {"category": "neutral","sounds": [{"name": "dun/death","stream": false}]},
+  "dun/say": {"category": "neutral","sounds": [{"name": "dun/say","stream": false}]},
+  "dun/hurt": {"category": "neutral","sounds": [{"name": "dun/hurt","stream": false}]},
+  "dun/pop": {"category": "master","sounds": [{"name": "dun/pop","stream": false}]},
+  "dun/jes": {"category": "master","sounds": [{"name": "dun/jes","stream": false}]},
+  "psim": {"category": "master", "sounds": [{"name": "psim", "stream": false}]},
+  "allahu": {"category": "master", "sounds": [{"name": "allahu", "stream": false}]},
+  "gei": {"category": "master", "sounds": [{"name": "gei", "stream": false}]},
+  "surprise": {"category": "master", "sounds": [{"name": "surprise", "stream": false}]},
+  "akbarRiot": {"category": "master", "sounds": [{"name": "akbarRiot", "stream": true}]},
+  "akbarSong": {"category": "master", "sounds": [{"name": "akbarSong", "stream": true}]},
+  "akbarArmed": {"category": "master", "sounds": [{"name": "akbarArmed", "stream": true}]}
+  }

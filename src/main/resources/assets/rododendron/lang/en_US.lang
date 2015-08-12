@@ -1,0 +1,73 @@
+# Items
+item.rododendron:evilSlimeball.name=Evil Slimeball
+item.rododendron:gaySemen.name=Gay Semen
+item.rododendron:dunPie.name=Dun Pie
+item.rododendron:pinkCrystal.name=Pink Crystal
+item.rododendron:pinkIngot.name=Pink Ingot
+item.rododendron:pinkDust.name=Pink Dust
+item.rododendron:unstableSemenMash.name=Unstable Semen Mesh
+item.rododendron:pinkMotionCore.name=Pink Motion Core
+item.rododendron:energizedMotionCore.name=Energized Motion Core
+item.rododendron:enrichedGaySemen.name=Enriched Gay Semen
+item.rododendron:pinkCookie.name=Pink Cookie
+item.rododendron:overchargedCookie.name=Overcharged Cookie
+
+item.rododendron:psimStaff.name=Psim Staff
+item.rododendron:homeSweetHome.name=Home Sweet Home
+item.rododendron:akbarGun.name=Akbar Gun
+item.rododendron:scaffoldingBuilder.name=Scaffolding Builder
+item.rododendron:buildersStaff.name=Builder's staff
+
+item.rododendron:energizedIngot.name=Energized Ingot
+item.rododendron:energizedCrystal.name=Energized Crystal
+
+item.rododendron:vibrator.name=Vibrator
+item.rododendron:uselessWater.name=Useless water
+item.rododendron:rightHand.name=Right Hand
+
+# Blocks
+tile.rododendron:gayHead.name=Gay Head
+tile.rododendron:akbar.name=Akbar
+tile.rododendron:akbarCore.name=Akbar Core
+
+tile.rododendron:energizedDanium.name=Energized Danium
+tile.rododendron:pinkDanium.name=Pink Danium
+
+tile.rododendron:energizedRubberDildo.name=Energized Rubber Dildo
+tile.rododendron:pinkRubberDildo.name=Pink Rubber Dildo
+
+tile.rododendron:energizedSpeedySemen.name=Energized Speedy Semen
+tile.rododendron:pinkSpeedySemen.name=Pink Speedy Semen
+
+tile.rododendron:pinkCrystalBlock.name=Block of Pink Crystal
+tile.rododendron:pinkIngotBlock.name=Block of Pink Metal
+
+tile.rododendron:charger.name=Charger
+tile.rododendron:energizedCrystalBlock.name=Block of Energized Crystal
+tile.rododendron:energizedIngotBlock.name=Block of Energized Metal
+tile.rododendron:scaffold.name=Scaffold
+tile.rododendron:antinigga.name=Antinigga
+
+# Creative tab
+itemGroup.rododendron=Rododendron
+
+# Container
+container.charger=Charger
+container.inventory=Fuck off
+
+# Entities
+entity.rododendron.AkbarCow.name=Akbar Cow
+entity.rododendron.MegaAkbarCow.name=Mega Akbar Cow
+entity.rododendron.Dildo.name=Dildo
+entity.rododendron.Dun.name=Dun
+entity.rododendron.Yvonne.name=Ivona Soucková
+entity.rododendron.Mary.name=Maria Halbrstatova
+entity.rododendron.Sakalka.name=Libuse Sakakurva
+entity.rododendron.Stepanek.name=Stepanek
+entity.rododendron.Ninunu.name=Nina Novakova
+
+# Keys
+keys.rododendron.category=Rododendron
+keys.rododendron.increase=Increase tool range
+keys.rododendron.decrease=Decrease tool range
+keys.rododendron.axis=Horizontal/Vertical
