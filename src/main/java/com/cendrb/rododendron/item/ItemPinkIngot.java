@@ -17,6 +17,7 @@ public class ItemPinkIngot extends ItemChargeableItem {
     {
         super();
         setUnlocalizedName(Names.Items.pinkIngot);
+
     }
 
     @Override
@@ -28,5 +29,4 @@ public class ItemPinkIngot extends ItemChargeableItem {
     public ItemStack getChargingResult() {
         return new ItemStack(ModItems.energizedIngot);
     }
-    
 }
