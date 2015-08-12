@@ -1,4 +1,7 @@
+.gradle
 eclipse
 build
 out
 Rododendron.iws
+Rododendron.ipr
+Rododendron.iml
