@@ -27,8 +27,12 @@ public class GenericHelpers {
 		projectile.motionZ = d2 * f1 * random.nextGaussian();
 	}
 
-	public static ChunkCoordinates getblockBellowEntity(Entity entity)
+	public static ChunkCoordinates getBlockBellowEntity(Entity entity)
     {
+        int x = MathHelper.floor_double(entity.posX);
+        int y = MathHelper.floor_double(entity.posY - 0.2D - (double)entity.yOffset);
+        int z = MathHelper.floor_double(entity.posZ);
 
+        return new ChunkCoordinates(x, y, z);
     }
 }

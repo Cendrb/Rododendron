@@ -3,6 +3,7 @@ package com.cendrb.rododendron.item.charger.chargeable_tools;
 import com.cendrb.rododendron.init.ModBlocks;
 import com.cendrb.rododendron.item.charger.ItemChargeableTool;
 import com.cendrb.rododendron.reference.Names;
+import com.cendrb.rododendron.utility.GenericHelpers;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -58,9 +59,10 @@ public class ItemScaffoldingBuilder extends ItemChargeableTool {
 
         if (!world.isRemote) {
 
-            int x = MathHelper.floor_double(player.posX);
-            int y = MathHelper.floor_double(player.posY - 0.2D - (double)player.yOffset);
-            int z = MathHelper.floor_double(player.posZ);
+            ChunkCoordinates baseCoordinates = GenericHelpers.getBlockBellowEntity(player);
+            int x = baseCoordinates.posX;
+            int y = baseCoordinates.posY;
+            int z = baseCoordinates.posZ;
 
 
             int range = itemStack.stackTagCompound.getInteger("range");
