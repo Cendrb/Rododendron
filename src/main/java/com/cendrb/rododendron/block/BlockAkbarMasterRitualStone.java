@@ -14,11 +14,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.gen.structure.MapGenVillage;
 import net.minecraftforge.common.util.ForgeDirection;
+
+import java.util.List;
 
 /**
  * Created by cendr_000 on 13.08.2015.
@@ -57,9 +60,17 @@ public class BlockAkbarMasterRitualStone extends BlockGeneric {
             else
                 villager = new EntityInnocentVillager(world);
             villager.setPosition(x, y + 15, z);
-            LogHelper.info(x);
-            LogHelper.info(y);
-            LogHelper.info(z);
+            world.spawnEntityInWorld(villager);
+        }
+
+        for(int w = 0; w != 30; w++)
+        {
+            Entity villager;
+            if(world.rand.nextBoolean())
+                villager = new EntityVillager(world);
+            else
+                villager = new EntityInnocentVillager(world);
+            villager.setPosition(x, y + 1, z);
             world.spawnEntityInWorld(villager);
         }
     }

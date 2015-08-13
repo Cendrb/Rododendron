@@ -22,7 +22,7 @@ public class Rituals {
         AkbarTemple.setBlock(-1, 0, 0, BlockAkbar.class);
         AkbarTemple.setBlock(0, 0, 1, BlockAkbar.class);
         AkbarTemple.setBlock(0, 0, -1, BlockAkbar.class);
-/*
+
         AkbarTemple.setBlock(2, 0, 0, BlockAkbar.class);
         AkbarTemple.setBlock(-2, 0, 0, BlockAkbar.class);
         AkbarTemple.setBlock(0, 0, 2, BlockAkbar.class);
@@ -58,6 +58,6 @@ public class Rituals {
         AkbarTemple.setBlock(3, 2, 3, BlockAkbarCore.class);
         AkbarTemple.setBlock(3, 2, -3, BlockAkbarCore.class);
         AkbarTemple.setBlock(-3, 2, 3, BlockAkbarCore.class);
-        AkbarTemple.setBlock(-3, 2, -3, BlockAkbarCore.class);*/
+        AkbarTemple.setBlock(-3, 2, -3, BlockAkbarCore.class);
     }
 }
