@@ -36,6 +36,13 @@ public class EntityMary extends EntityBitch {
     }
 
     @Override
+    protected void damageEntity(DamageSource source, float damage) {
+        if(source.isExplosion())
+            heal(damage);
+        super.damageEntity(source, damage);
+    }
+
+    @Override
     public void onDeath(DamageSource p_70645_1_) {
         worldObj.setBlock((int)posX, (int)posY, (int)posZ, Blocks.flowing_water);
         super.onDeath(p_70645_1_);
@@ -46,7 +53,7 @@ public class EntityMary extends EntityBitch {
         fireFart++;
         largeFart++;
 
-        if (fireFart > 69) {
+        if (fireFart > 20) {
             fireFart = 0;
             fartAt();
         }

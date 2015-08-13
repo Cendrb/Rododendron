@@ -3,20 +3,24 @@ package com.cendrb.rododendron.proxy;
 import com.cendrb.rododendron.client.handler.KeyInputEventHandler;
 import com.cendrb.rododendron.client.model.ModelDildo;
 import com.cendrb.rododendron.client.model.ModelDun;
+import com.cendrb.rododendron.client.model.ModelInnocentVillager;
 import com.cendrb.rododendron.client.model.bitch.ModelBitch;
 import com.cendrb.rododendron.client.render.RenderDildo;
 import com.cendrb.rododendron.client.render.RenderDun;
+import com.cendrb.rododendron.client.render.RenderInnocentVillager;
 import com.cendrb.rododendron.client.render.bitch.RenderBitch;
 import com.cendrb.rododendron.client.render.bitch.RenderStepanek;
 import com.cendrb.rododendron.client.settings.KeyBindings;
 import com.cendrb.rododendron.entity.EntityDildo;
 import com.cendrb.rododendron.entity.EntityDun;
+import com.cendrb.rododendron.entity.EntityInnocentVillager;
 import com.cendrb.rododendron.entity.bitch.*;
 import com.cendrb.rododendron.reference.Reference;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.util.ResourceLocation;
 
 /**
@@ -32,7 +36,7 @@ public class ClientProxy extends CommonProxy {
         RenderingRegistry.registerEntityRenderingHandler(EntityMary.class, new RenderBitch(new ModelBitch(), 0.4F, new ResourceLocation(Reference.MOD_ID, "textures/entity/bitch.png")));
         RenderingRegistry.registerEntityRenderingHandler(EntitySakalka.class, new RenderBitch(new ModelBitch(), 0.4F, new ResourceLocation(Reference.MOD_ID, "textures/entity/bitch.png")));
         RenderingRegistry.registerEntityRenderingHandler(EntityStepanek.class, new RenderStepanek(new ModelBiped(), 0.1F));
-
+        RenderingRegistry.registerEntityRenderingHandler(EntityInnocentVillager.class, new RenderInnocentVillager(new ModelInnocentVillager(), 0.5F));
     }
 
     @Override

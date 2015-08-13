@@ -50,6 +50,7 @@ public final class Names {
         public static final String pinkSpeedySemen = "pinkSpeedySemen";
         public static final String scaffold = "scaffold";
         public static final String antinigga = "antinigga";
+        public static final String akbarMasterRitualStone = "akbarMasterRitualStone";
     }
 
     public static class Entities
@@ -63,6 +64,7 @@ public final class Names {
         public static final String sakalka = "Sakalka";
         public static final String stepanek = "Stepanek";
         public static final String ninunu = "Ninunu";
+        public static final String innocentVillager = "InnocentVillager";
     }
 
     public static class TileEntities {

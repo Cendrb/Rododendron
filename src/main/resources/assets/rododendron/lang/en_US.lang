@@ -48,6 +48,7 @@ tile.rododendron:energizedCrystalBlock.name=Block of Energized Crystal
 tile.rododendron:energizedIngotBlock.name=Block of Energized Metal
 tile.rododendron:scaffold.name=Scaffold
 tile.rododendron:antinigga.name=Antinigga
+tile.rododendron:akbarMasterRitualStone.name=Akbar Master Ritual Stone
 
 # Creative tab
 itemGroup.rododendron=Rododendron
@@ -66,6 +67,7 @@ entity.rododendron.Mary.name=Maria Halbrstatova
 entity.rododendron.Sakalka.name=Libuse Sakakurva
 entity.rododendron.Stepanek.name=Stepanek
 entity.rododendron.Ninunu.name=Nina Novakova
+entity.rododendron.InnocentVillager=Villager
 
 # Keys
 keys.rododendron.category=Rododendron

@@ -37,6 +37,7 @@ public class ModBlocks {
     public static BlockEnergizedCrystal energizedCrystal = new BlockEnergizedCrystal();
 
     public static BlockAntinigga antinigga = new BlockAntinigga();
+    public static BlockAkbarMasterRitualStone akbarMasterRitualStone = new BlockAkbarMasterRitualStone();
 
     public static void init()
     {
@@ -63,5 +64,6 @@ public class ModBlocks {
         GameRegistry.registerBlock(energizedCrystal, Names.Blocks.energizedCrystalBlock);
 
         GameRegistry.registerBlock(antinigga, Names.Blocks.antinigga);
+        GameRegistry.registerBlock(akbarMasterRitualStone, Names.Blocks.akbarMasterRitualStone);
     }
 }

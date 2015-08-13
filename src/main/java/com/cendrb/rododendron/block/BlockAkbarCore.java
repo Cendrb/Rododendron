@@ -27,7 +27,7 @@ public class BlockAkbarCore extends BlockGeneric implements ITileEntityProvider 
 
     @Override
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
-        if (!world.isRemote && !((TileEntityAkbarCore) world.getTileEntity(x, y, z)).getRunning()) {
+        if (!world.isRemote && player.getCurrentEquippedItem() == null && !((TileEntityAkbarCore) world.getTileEntity(x, y, z)).getRunning()) {
             if (world.getBlockMetadata(x, y, z) == 0)
                 player.addChatMessage(new ChatComponentText("AKBAR 420: Requires 3X3X3 structure of Akbar blocks. Akbar core in the middle. Then click on top middle block."));
             else if(!((TileEntityAkbarCore) world.getTileEntity(x, y, z)).getArmed())

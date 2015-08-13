@@ -44,6 +44,8 @@ public class Rododendron {
         network = NetworkRegistry.INSTANCE.newSimpleChannel("Rododendron");
         network.registerMessage(MessagePlayerInventoryItemChange.Handler.class, MessagePlayerInventoryItemChange.class, 0, Side.SERVER);
 
+        Rituals.init();
+
         // config
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());

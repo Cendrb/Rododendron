@@ -6,6 +6,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
@@ -28,6 +29,31 @@ public class WorldHelper {
         return true;
     }
 
+    public static boolean isBlock(World world, int x, int y, int z, ForgeDirection direction, int distance, Class<? extends Block> block)
+    {
+        switch (direction)
+        {
+            case UP:
+                y += distance;
+                break;
+            case DOWN:
+                y -= distance;
+                break;
+            case NORTH:
+                z -= distance;
+                break;
+            case SOUTH:
+                z += distance;
+                break;
+            case WEST:
+                x -= distance;
+                break;
+            case EAST:
+                x += distance;
+                break;
+        }
+        return block.isInstance(world.getBlock(x, y, z));
+    }
 
     public static void createExplosion(World world, Entity entity, double x, double y, double z, float power)
     {

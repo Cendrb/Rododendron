@@ -15,7 +15,8 @@ public class EntityMegaAkbarCow extends EntityCow {
     public EntityMegaAkbarCow(World world) {
         super(world);
         this.world = world;
-        setSize(5, 5);
+        setSize(10, 10);
+        setScale(10);
     }
 
     @Override

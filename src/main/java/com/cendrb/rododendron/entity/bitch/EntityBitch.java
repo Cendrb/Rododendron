@@ -41,7 +41,7 @@ public class EntityBitch extends EntityMob {
     public void onDeath(DamageSource p_70645_1_) {
         super.onDeath(p_70645_1_);
         if(!worldObj.isRemote) {
-            WorldHelper.spawnFlyingEntities(worldObj, 500, EntityAkbarCow.class, posX, posY, posZ);
+            WorldHelper.spawnFlyingEntities(worldObj, 50, EntityAkbarCow.class, posX, posY, posZ);
         }
     }
 }

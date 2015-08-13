@@ -125,7 +125,7 @@ public class EntityDun extends EntityAnimal {
             if(dataWatcher.getWatchableObjectByte(20) == 1)
                 worldObj.spawnParticle("hugeexplosion", posX, posY + 1, posZ, 1.0D, 0.0D, 0.0D);
             if(dataWatcher.getWatchableObjectByte(21) == 1)
-                worldObj.spawnParticle("cloud", posX, posY + 2, posZ, 1.0D, 0.0D, 0.0D);
+                worldObj.spawnParticle("cloud", posX, posY + 1, posZ, 0.0D, 1.0D, 0.0D);
         }
     }
 
