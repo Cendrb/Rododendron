@@ -30,7 +30,7 @@ public class EntityInnocentVillager extends EntityVillager {
     @Override
     public void onLivingUpdate() {
         super.onLivingUpdate();
-        if(worldObj.getClosestPlayer(posX, posY, posZ, 3) != null)
+        if(worldObj.getClosestPlayer(posX, posY, posZ, 4) != null)
         {
             if(played)
                 ticksPassed += 1;
@@ -42,7 +42,7 @@ public class EntityInnocentVillager extends EntityVillager {
             ticksPassed -= worldObj.rand.nextInt(5);
         }
 
-        if(ticksPassed > 283)
+        if(ticksPassed > 203)
         {
             if(!worldObj.isRemote && !played) {
                 worldObj.playSoundEffect(posX, posY, posZ, "rododendron:allahu", 64, 1);
@@ -50,12 +50,12 @@ public class EntityInnocentVillager extends EntityVillager {
             }
         }
 
-        if(ticksPassed < 283 && !worldObj.isRemote)
+        if(ticksPassed < 203 && !worldObj.isRemote)
         {
             played = false;
         }
 
-        if(ticksPassed > 300)
+        if(ticksPassed > 220)
         {
             if(!worldObj.isRemote) {
                 worldObj.createExplosion(this, posX, posY, posZ, 5, true);
