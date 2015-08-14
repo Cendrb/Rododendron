@@ -56,5 +56,6 @@ public class Recipes {
 
         GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.antinigga, 8), "SSS", "SIS", "SSS", 'S', Blocks.stone, 'I', Items.iron_ingot);
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.adhanPipe), " GA", "GSG", "SG ", 'S', Items.stick, 'A', ModBlocks.akbar, 'G', Items.gold_nugget);
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.akbarMasterRitualStone), "EAE", "ACA", "EAE", 'E', ModItems.energizedIngot, 'A', ModBlocks.akbar, 'C', ModBlocks.akbarCore);
     }
 }
